@@ -14,7 +14,7 @@ const UBOUT_US_DATA = [
         id:2,
         alt:'asd',
         src: head,
-        title:'Awesome Icons',
+        title:'One Page',
         description:'Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod tempor'
     },
     {

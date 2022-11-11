@@ -1,0 +1,13 @@
+
+$colorBlack: #000000;
+$colorWhite: #FFFFFF;
+
+@mixin textStyles ($fontFamily, $fontStyle, $fontWeight, $fontSize, $lineHeight, $letterSpasing,$color) {
+    font-family: $fontFamily;
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpasing;
+    color: $color;
+}

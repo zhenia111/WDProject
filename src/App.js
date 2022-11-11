@@ -1,11 +1,14 @@
-
-import './App.css';
 import AboutUsTemplate from './Templates/AboutUsTemplate/index';
+import OurServices from './Templates/OurServices/index';
+import BannerTemplate from './Templates/BannerTemplate/index';
+import './App.css';
 
 function App() {
   return (
     <div className="App container">
-        <AboutUsTemplate/>
+      <BannerTemplate />
+      <AboutUsTemplate />
+      <OurServices />
     </div>
   );
 }

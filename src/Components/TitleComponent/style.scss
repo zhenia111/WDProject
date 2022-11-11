@@ -1,0 +1,23 @@
+@import '../../variable';
+
+.mainTitle {
+    text-align: center;
+    margin: 0 auto;
+    width: 821px;
+    margin-bottom: 115px;
+    .mainTitle__title {
+        margin-bottom: 30px;
+        @include textStyles('Open Sans', normal, 700, 36px, 49px, 0.1em,$colorBlack);
+    }
+    .mainTitle__subtitle {
+        @include textStyles('Open Sans', normal, 400, 18px, 24px, 0.1em,$colorBlack);
+       
+    }
+}
+
+@media (max-width:1200px){
+    .mainTitle{
+        width: 500px;
+    }
+}
+

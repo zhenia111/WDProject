@@ -1,12 +1,12 @@
-import './style.css';
+import './style.scss';
 
 const TitleComponent =({title,description})=>{
 
     return(
-        <>
-            <h2 className='aboutUs__title'>{title}</h2>
-            <p className='aboutUs__subtitle'>{description}</p>
-        </>
+        <div className="mainTitle">
+            <h2 className='mainTitle__title'>{title}</h2>
+            <p className='mainTitle__subtitle'>{description}</p>
+        </div>
     );
 }
 
