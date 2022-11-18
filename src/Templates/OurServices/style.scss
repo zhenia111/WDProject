@@ -1,12 +1,13 @@
 
 .ourServices{
     background-color: #E4FDF9;
-    padding: 127px 200px 103px 200px;
+    padding: 115px 0;
     .ourServices__loading{
         text-align: center;
         margin-bottom: 40px;
     }
     .ourServices__cards{
+        padding: 0 200px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;

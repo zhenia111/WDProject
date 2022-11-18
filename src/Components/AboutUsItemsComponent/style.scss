@@ -3,6 +3,9 @@
 .item {
     text-align: center;
     width: 237px;
+    @media (max-width: 1200px) {
+        margin-bottom: 40px;
+    }
     .item__img {
         margin-bottom: 30px;
     }

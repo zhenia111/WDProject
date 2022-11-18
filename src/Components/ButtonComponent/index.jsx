@@ -1,9 +1,9 @@
 import './style.scss';
 
-const ButtonComponent =({showOrHideUsers,label,className})=>{
+const ButtonComponent =({showOrHideUsers,label,className,showModal,state})=>{
     return(
             <button 
-            onClick={showOrHideUsers}
+            onClick={state ? showModal:showOrHideUsers}
             className={className}
             >{label}</button>  
     )

@@ -5,6 +5,10 @@
     margin: 0 auto;
     width: 821px;
     margin-bottom: 115px;
+    @media (max-width: 800px){
+        width: 400px;
+        margin-bottom: 50px;
+    }
     .mainTitle__title {
         margin-bottom: 30px;
         @include textStyles('Open Sans', normal, 700, 36px, 49px, 0.1em,$colorBlack);
@@ -15,9 +19,4 @@
     }
 }
 
-@media (max-width:1200px){
-    .mainTitle{
-        width: 500px;
-    }
-}
 
