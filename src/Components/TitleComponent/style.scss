@@ -5,17 +5,27 @@
     margin: 0 auto;
     width: 821px;
     margin-bottom: 115px;
-    @media (max-width: 800px){
+    @media (max-width: 992px){
         width: 400px;
         margin-bottom: 50px;
+    }
+    @media (max-width: 576px){
+        width: 280px;
+        margin-bottom: 30px;
     }
     .mainTitle__title {
         margin-bottom: 30px;
         @include textStyles('Open Sans', normal, 700, 36px, 49px, 0.1em,$colorBlack);
+        @media (max-width: 576px){
+            @include textStyles('Open Sans', normal, 700, 26px, 35px, 0.1em,$colorBlack); 
+        }
     }
+
     .mainTitle__subtitle {
         @include textStyles('Open Sans', normal, 400, 18px, 24px, 0.1em,$colorBlack);
-       
+        @media (max-width: 576px){
+            @include textStyles('Open Sans', normal, 400, 14px, 20px, 0.1em,$colorBlack); 
+        }
     }
 }
 

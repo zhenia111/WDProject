@@ -1,0 +1,32 @@
+@import '../../variable.scss';
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 115px;
+    background-color: #fff;
+    @media (max-width: 768px){
+        padding: 15px 15px;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+       
+        .logo__descr{
+            @include textStyles('Open Sans', normal, 400, 16px, 22px, 0.1em,$colorBlack);
+            width: 117px;
+        }
+    }
+    .nav-link{
+        @include textStyles('Open Sans', normal, 600, 20px, 22px, 0.1em,$colorBlack);
+        &:hover{
+            color:rgb(97, 97, 97);
+            border-bottom: 1px solid black;
+        }
+        @media (max-width: 1200px){
+            @include textStyles('Open Sans', normal, 400, 16px, 28px, 0.0025em,$colorBlack);
+        }
+    }
+
+}

@@ -10,7 +10,7 @@ import './style.scss';
 
 const AboutUsTemplate = () => {
     return (
-        <div className="aboutUs">
+        <div id='aboutUs' className="aboutUs">
             < TitleComponent 
                 title={TITLE_COMPONENT_ABOUTUS.title}
                 description={TITLE_COMPONENT_ABOUTUS.description} />

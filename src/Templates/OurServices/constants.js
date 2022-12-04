@@ -22,3 +22,12 @@ export const BUTTON_LABELS ={
     showAll: 'VIEW ALL',
     hideAll: 'HIDE ALL'
 }
+
+export const INPUT_GROUP ={
+    placeholder: {
+        name: 'name or username',
+    },
+    label: {
+        
+    }
+}

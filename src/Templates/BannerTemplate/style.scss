@@ -3,41 +3,67 @@
 
 .banner {
     padding: 220px 0;
+    @media (max-width: 992px){
+        padding: 100px 0;
+    }
+    @media (max-width: 576px){
+        padding: 15px 0;
+    }
     .banner__title {
         text-align: center;
         margin-bottom: 60px;
         @include textStyles('Open Sans', normal, 600, 70px, 22px, 0.1em,$colorWhite);
         @media (max-width:1200px) {
-            @include textStyles('Open Sans', normal, 600, 50px, 22px, 0.1em,$colorWhite);
-            
+            margin-bottom: 30px;
+            @include textStyles('Open Sans', normal, 600, 50px, 22px, 0.1em,$colorWhite);    
         } 
-        @media (max-width:800px) {
-            @include textStyles('Open Sans', normal, 600, 30px, 22px, 0.1em,$colorWhite);
-            
+        @media (max-width:992px) {
+            @include textStyles('Open Sans', normal, 600, 40px, 22px, 0.1em,$colorWhite); 
         } 
+        @media (max-width:768px) {
+            margin-bottom: 15px;
+            @include textStyles('Open Sans', normal, 600, 30px, 22px, 0.1em,$colorWhite); 
+        }
+        @media (max-width:576px) {
+            margin-bottom: 10px;
+            @include textStyles('Open Sans', normal, 600, 16px, 20px, 0.1em,$colorWhite); 
+        }
     }
     .banner__subtitle {
         text-align: center;
         margin-bottom: 127px;
         @include textStyles('Open Sans', normal, 400, 30px, 22px, 0.1em,$colorWhite); 
         @media (max-width:1200px) {
-            @include textStyles('Open Sans', normal, 600, 20px, 22px, 0.1em,$colorWhite);
+            margin-bottom: 60px;
+            @include textStyles('Open Sans', normal, 400, 20px, 22px, 0.1em,$colorWhite);
         } 
-        @media (max-width:800px) {
-            @include textStyles('Open Sans', normal, 600, 15px, 22px, 0.1em,$colorWhite);
-            
+        @media (max-width:992px) {
+            @include textStyles('Open Sans', normal, 400, 15px, 22px, 0.1em,$colorWhite);  
         } 
-
+        @media (max-width:768px) {
+            margin-bottom: 25px;
+            @include textStyles('Open Sans', normal, 400, 12px, 22px, 0.1em,$colorWhite); 
+        }
+        @media (max-width:576px) {
+            margin-bottom: 15px;
+            @include textStyles('Open Sans', normal, 400, 10px, 12px, 0.1em,$colorWhite); 
+        }
     }
     .banner__buttons {
         display: flex;
         justify-content: space-between;
         width: 480px;
         margin: 0 auto;
-        @media (max-width:600px) {
+        @media (max-width:768px) {
            flex-direction: column;
+           justify-content: space-between;
            align-items: center;
            width: 240px;
+        }
+        .banner__button{
+            @media (max-width:768px){
+                margin-bottom: 18px;
+            }
         }
     }
     

@@ -23,6 +23,7 @@ const PricingPlan = () => {
                         title={title}
                         price={price}
                         lists={lists}
+                        id={id}
                     />
                 ))}
 

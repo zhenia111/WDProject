@@ -2,11 +2,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container,Row,Col,Modal,Button} from 'react-bootstrap';
 
-
-
+import { MODAL_DATA } from './constants';
 
 
 const ModalComponent = ({ username, name, address, phone, closeModal, show }) => {
+
+
   return (
     <>
     
@@ -24,15 +25,15 @@ const ModalComponent = ({ username, name, address, phone, closeModal, show }) =>
                 </Row>
                 <Row className='d-flex justify-content-between mb-4'>
                   <Col xs={12} className=' d-flex justify-content-center mb-2'>
-                    <div className=' bg-success p-2 border border-light'>city:</div>
+                    <div className=' bg-success p-2 border border-light'>{MODAL_DATA.sity}</div>
                     <div className='bg-light border p-2'>{address.city}</div>
                   </Col>
                   <Col xs={12} className=' d-flex justify-content-center mb-2' >
-                    <div className='bg-success p-2 border border-light'>street:</div>
+                    <div className='bg-success p-2 border border-light'>{MODAL_DATA.street}</div>
                     <div className='bg-light border p-2'>{address.street}</div>
                   </Col >
                   <Col xs={12} className=' d-flex justify-content-center '>
-                    <div className='bg-success p-2 border border-light '>suite:</div>
+                    <div className='bg-success p-2 border border-light '>{MODAL_DATA.suite}</div>
                     <div className='bg-light border p-2'>{address.suite}</div>
                   </Col>
                 </Row>
@@ -43,11 +44,11 @@ const ModalComponent = ({ username, name, address, phone, closeModal, show }) =>
                 </Row>
                 <Row className='d-flex justify-content-center'>
                   <Col xs={7} className=' d-flex justify-content-center '>
-                    <div className=' bg-success p-2 border border-light'>phone:</div>
+                    <div className=' bg-success p-2 border border-light'>{MODAL_DATA.phone}</div>
                     <div className='bg-light border p-2'>{phone}</div>
                   </Col>
                   <Col xs={5} className=' d-flex justify-content-center '>
-                    <div className=' bg-success p-2 border border-light'>Nickname:</div>
+                    <div className=' bg-success p-2 border border-light'>{MODAL_DATA.nickName}</div>
                     <div className='bg-light border p-2'>{username}</div>
                   </Col>
                 </Row>

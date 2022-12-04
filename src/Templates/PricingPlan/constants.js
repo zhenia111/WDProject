@@ -10,36 +10,84 @@ export const PRICING_PLAN_INFO =[
     {
         id:1,
         title:'Free Trail',
-        price: '00',
-        lists:{
-            list1:'30 Free Trail',
-            list2:'5 Free Projects',
-            list3:'PHP 5 Enabled',
-            list4:'24/7 Suports'
-        }  
+        price:{
+            currentPrice:'00',
+            currency:'$',
+            term: 'per month'
+        }, 
+        lists:[
+            {
+                list:'30 Free Trail',
+                id:1
+            },
+            {
+                list:'5 Free Projects',
+                id:2
+            },
+            {
+                list:'PHP 5 Enabled',
+                id:3
+            },
+            {
+                list:'24/7 Suports',
+                id:4
+            }
+        ]  
     },
     {
         id: 2,
         title:'Basic',
-        price: '50',
-        lists:{
-            list1:'30 Free Trail',
-            list2:'10 Free Projects',
-            list3:'PHP 5 Enabled',
-            list4:'24/7 Suports'
-        }
+        price:{
+            currentPrice:'50',
+            currency:'$',
+            term: 'per month'
+        }, 
+        lists:[
+            {
+                list:'30 Free Trail',
+                id:1
+            },
+            {
+                list:'5 Free Projects',
+                id:2
+            },
+            {
+                list:'PHP 5 Enabled',
+                id:3
+            },
+            {
+                list:'24/7 Suports',
+                id:4
+            }
+        ]  
                
     },
     {
         id:3,
         title:'Ultimates',
-        price: '99',
-        lists:{
-            list1:'30 Free Trail',
-            list2:'10 Free Projects',
-            list3:'PHP 7 Enabled',
-            list4:'24/7 Suports'
-        } 
+        price:{
+            currentPrice:'99',
+            currency:'$',
+            term: 'per month'
+        }, 
+        lists:[
+            {
+                list:'30 Free Trail',
+                id:1
+            },
+            {
+                list:'5 Free Projects',
+                id:2
+            },
+            {
+                list:'PHP 5 Enabled',
+                id:3
+            },
+            {
+                list:'24/7 Suports',
+                id:4
+            }
+        ]  
     }
 
 ]

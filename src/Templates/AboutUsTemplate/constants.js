@@ -33,9 +33,5 @@ const UBOUT_US_DATA = [
 ];
 
 
-
-    
-
-
 export  {TITLE_COMPONENT_ABOUTUS};
 export  {UBOUT_US_DATA};

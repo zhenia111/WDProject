@@ -11,12 +11,17 @@ const BannerTemplate = () => {
             <div className="banner__title">{BANNER.title}</div>
             <div className="banner__subtitle">{BANNER.subtitle}</div>
             <div className="banner__buttons">
-                <ButtonComponent
-                    className={BUTTON_STYLES.transparent}
-                    label={BUTTON_LABELS.labelOne} />
-                <ButtonComponent
-                    className={BUTTON_STYLES.green}
-                    label={BUTTON_LABELS.labelTwo} />
+                <div className='banner__button'>
+                    <ButtonComponent
+                        className={BUTTON_STYLES.transparent}
+                        label={BUTTON_LABELS.labelOne} />
+                </div>
+                <div className='banner__button'>
+                    <ButtonComponent
+                        className={BUTTON_STYLES.green}
+                        label={BUTTON_LABELS.labelTwo} />
+                </div>
+
             </div>
         </div>
     )
