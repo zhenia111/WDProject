@@ -42,7 +42,11 @@ export const NAV_DATA =[
       href: '#',
       id:7
     },
-  ]
+  ];
+
+  export const  BUTTON_DATA ={
+    text: 'LOG OUT'
+  }
 
 
 

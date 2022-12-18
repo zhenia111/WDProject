@@ -27,6 +27,9 @@
         @media (max-width: 1200px){
             @include textStyles('Open Sans', normal, 400, 15px, 28px, 0.0025em,$colorBlack);
         }
+        @media (max-width: 576px){
+            @include textStyles('Open Sans', normal, 400, 10px, 28px, 0.0025em,$colorBlack);
+        }
     }
     
     .copyright__images{

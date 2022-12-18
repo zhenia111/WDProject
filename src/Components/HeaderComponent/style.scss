@@ -1,31 +1,65 @@
 @import '../../variable.scss';
 
-.header{
-    display:flex;
+.header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 22px 115px;
     background-color: #fff;
-    @media (max-width: 768px){
+
+    @media (max-width: 1200px) {
         padding: 15px 15px;
     }
-    .logo{
+
+    .logo {
         display: flex;
         align-items: center;
-       
-        .logo__descr{
-            @include textStyles('Open Sans', normal, 400, 16px, 22px, 0.1em,$colorBlack);
+
+        .logo__descr {
+            @include textStyles('Open Sans', normal, 400, 16px, 22px, 0.1em, $colorBlack);
             width: 117px;
+
+            @media (max-width: 576px) {
+                display: none;
+            }
         }
     }
-    .nav-link{
-        @include textStyles('Open Sans', normal, 600, 20px, 22px, 0.1em,$colorBlack);
-        &:hover{
-            color:rgb(97, 97, 97);
+
+    .nav-link {
+        @include textStyles('Open Sans', normal, 600, 20px, 22px, 0.1em, $colorBlack);
+
+        &:hover {
+            color: rgb(97, 97, 97);
             border-bottom: 1px solid black;
         }
-        @media (max-width: 1200px){
-            @include textStyles('Open Sans', normal, 400, 16px, 28px, 0.0025em,$colorBlack);
+        @media (max-width: 1400px) {
+            @include textStyles('Open Sans', normal, 400, 18px, 28px, 0.0025em, $colorBlack);
+        }
+    }
+
+    .header__btn {
+        display: block;
+        margin: 0 auto;
+        padding: 14px 0;
+        width: 160px;
+        @include textStyles('Open Sans', normal, 600, 20px, 22px, 0.1em, $colorBlack);
+        background-color: transparent;
+        border: 2px solid $colorBlack;
+
+        &:hover {
+            background-color: #bee8e3;
+            border: 4px solid $colorWhite;
+        }
+
+        @media (max-width: 1200px) {
+            width: 120px;
+            padding: 8px 0;
+            @include textStyles('Open Sans', normal, 600, 14px, 12px, 0.1em, $colorBlack);
+        }
+
+        @media (max-width:576px) {
+            @include textStyles('Open Sans', normal, 600, 10px, 12px, 0.1em, $colorBlack);
+            width: 80px;
         }
     }
 

@@ -4,7 +4,10 @@
     display:flex;
     justify-content: center;
     .input-inner{
-        width: 300px;
+        width: 500px;
         align-self: center;
+        @media (max-width: 768px){
+            width: 280px;
+        }
     }
 }
