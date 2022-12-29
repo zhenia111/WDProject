@@ -1,5 +1,4 @@
-
-export const  BUTTON_STYLES ={
-    className:'btn-smale-transparent',
-    label: 'Order Now'
+export const BUTTON_STYLES = {
+    className: "btn-smale-transparent",
+    label: "Order Now",
 }

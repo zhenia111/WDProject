@@ -1,21 +1,20 @@
-@import '../../variable';
+@import "../../variable";
 
 .priceCard {
     // width: 390px;
     .priceCard__head {
         padding: 49px 85px;
         h2 {
-            @include textStyles('Open Sans', normal, 400, 25px, 22px, 0.1em,$colorWhite);
+            @include textStyles("Open Sans", normal, 400, 25px, 22px, 0.1em, $colorWhite);
         }
     }
     &:hover {
         box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.35);
     }
-    .priceCard__list{
+    .priceCard__list {
         width: 187px;
-        .priceCard__li{
-            @include textStyles('Open Sans', normal, 300, 17px, 70px, 0.1em,$colorBlack);
+        .priceCard__li {
+            @include textStyles("Open Sans", normal, 300, 17px, 70px, 0.1em, $colorBlack);
         }
     }
-
 }

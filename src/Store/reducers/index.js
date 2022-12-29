@@ -1,16 +1,16 @@
-import {combineReducers} from '@reduxjs/toolkit';
+import { combineReducers } from "@reduxjs/toolkit"
 
-const intitialAuthState ={
+const intitialAuthState = {
     password: 55555,
-    isAuth: false
+    isAuth: false,
 }
 
-const authenticationReducer =(state = intitialAuthState, action)=>{
-    switch(action.type){
-        case 'AUTH': 
-            return {...state, isAuth: action.payload};
-        case 'LOGOUT':
-            return {...state, isAuth: action.payload};
+const authenticationReducer = (state = intitialAuthState, action) => {
+    switch (action.type) {
+        case "AUTH":
+            return { ...state, isAuth: action.payload }
+        case "LOGOUT":
+            return { ...state, isAuth: action.payload }
         default:
             return state
     }
@@ -18,6 +18,4 @@ const authenticationReducer =(state = intitialAuthState, action)=>{
 
 export const rootReducer = combineReducers({
     authenticationReducer,
-}
-
-)
+})

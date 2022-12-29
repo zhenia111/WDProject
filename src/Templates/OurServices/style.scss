@@ -1,38 +1,36 @@
-
-.ourServices{
-    background-color: #E4FDF9;
+.ourServices {
+    background-color: #e4fdf9;
     padding: 115px 0;
-    @media (max-width: 992px){
+    @media (max-width: 992px) {
         padding: 80px 0;
     }
-    @media (max-width: 576px){
+    @media (max-width: 576px) {
         padding: 30px 0 60px 0;
     }
-    .ourServices__loading{
+    .ourServices__loading {
         text-align: center;
         margin-bottom: 40px;
     }
-    .ourServices__inputs{
+    .ourServices__inputs {
         width: 500px;
         margin: 0 auto 20px auto;
-       @media(max-width: 768px){
-        width: 280px;
-       }
-        
+        @media (max-width: 768px) {
+            width: 280px;
+        }
     }
-    .ourServices__cards{
+    .ourServices__cards {
         padding: 0 200px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             padding: 0;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
     }
-    .ourServices__btn{
+    .ourServices__btn {
         text-align: center;
     }
 }

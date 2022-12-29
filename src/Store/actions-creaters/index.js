@@ -1,14 +1,13 @@
-
-export const  authDataActionCreater =()=>{
+export const authDataActionCreater = () => {
     return {
-        type:'AUTH',
-        payload: true
+        type: "AUTH",
+        payload: true,
     }
 }
 
-export const logOutDataActionCreater =()=>{
-   return {
-    type:'LOGOUT',
-    payload: false
-   } 
+export const logOutDataActionCreater = () => {
+    return {
+        type: "LOGOUT",
+        payload: false,
+    }
 }

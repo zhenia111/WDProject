@@ -1,12 +1,10 @@
-
-
-.input{
-    display:flex;
+.input {
+    display: flex;
     justify-content: center;
-    .input-inner{
+    .input-inner {
         width: 500px;
         align-self: center;
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             width: 280px;
         }
     }

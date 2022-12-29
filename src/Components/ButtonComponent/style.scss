@@ -1,32 +1,32 @@
-@import '../../variable';
+@import "../../variable";
 
 .btn-green {
     display: inline-block;
     width: 220px;
     padding: 18px 0;
-    @include textStyles('Roboto', normal, 700, 22px, 26px, 0.1em,$colorWhite);
-    background-color: #00897B;
+    @include textStyles("Roboto", normal, 700, 22px, 26px, 0.1em, $colorWhite);
+    background-color: #00897b;
     &:hover {
         background-color: #6fddd2;
         border: 4px solid $colorWhite;
     }
-    @media (max-width:576px) {
-        @include textStyles('Roboto', normal, 700, 10px, 12px, 0.1em,$colorWhite); 
+    @media (max-width: 576px) {
+        @include textStyles("Roboto", normal, 700, 10px, 12px, 0.1em, $colorWhite);
     }
 }
 
 .btn-transparent {
     display: inline-block;
-    width:220px;
+    width: 220px;
     padding: 18px 0;
-    @include textStyles('Roboto', normal, 700, 22px, 26px, 0.1em,$colorWhite);
+    @include textStyles("Roboto", normal, 700, 22px, 26px, 0.1em, $colorWhite);
     background-color: transparent;
     border: 4px solid $colorWhite;
     &:hover {
-        background-color: #64dcd0;   
+        background-color: #64dcd0;
     }
-    @media (max-width:576px) {
-        @include textStyles('Roboto', normal, 700, 10px, 12px, 0.1em,$colorWhite); 
+    @media (max-width: 576px) {
+        @include textStyles("Roboto", normal, 700, 10px, 12px, 0.1em, $colorWhite);
     }
 }
 
@@ -35,13 +35,13 @@
     margin: 0 auto;
     padding: 14px 0;
     width: 160px;
-    @include textStyles('Open Sans', normal, 600, 20px, 22px, 0.1em, $colorBlack);
+    @include textStyles("Open Sans", normal, 600, 20px, 22px, 0.1em, $colorBlack);
     background-color: transparent;
     border: 2px solid $colorBlack;
     &:hover {
         background-color: #bee8e3;
     }
-    @media (max-width:576px) {
-        @include textStyles('Open Sans', normal, 600, 10px, 12px, 0.1em,$colorBlack); 
+    @media (max-width: 576px) {
+        @include textStyles("Open Sans", normal, 600, 10px, 12px, 0.1em, $colorBlack);
     }
 }

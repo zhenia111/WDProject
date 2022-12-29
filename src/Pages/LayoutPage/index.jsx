@@ -1,17 +1,16 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom"
 
-import FooterComponent from '../../Components/FooterComponent';
-import HeaderComponent from '../../Components/HeaderComponent';
-
+import FooterComponent from "../../Components/FooterComponent"
+import HeaderComponent from "../../Components/HeaderComponent"
 
 const LayoutPage = () => {
     return (
         <>
             <HeaderComponent />
             <Outlet />
-            <FooterComponent/>
+            <FooterComponent />
         </>
     )
 }
 
-export default LayoutPage;
+export default LayoutPage

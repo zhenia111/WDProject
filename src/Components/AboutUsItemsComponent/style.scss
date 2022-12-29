@@ -1,4 +1,4 @@
-@import '../../variable';
+@import "../../variable";
 
 .item {
     text-align: center;
@@ -11,9 +11,9 @@
     }
     .item__text {
         margin-bottom: 30px;
-        @include textStyles('Open Sans', normal, 600, 20px, 22px, 0.1em,$colorBlack);
+        @include textStyles("Open Sans", normal, 600, 20px, 22px, 0.1em, $colorBlack);
     }
     .item__descr {
-        @include textStyles('Open Sans', normal, 400, 15px, 22px, 0,$colorBlack);
+        @include textStyles("Open Sans", normal, 400, 15px, 22px, 0, $colorBlack);
     }
 }
